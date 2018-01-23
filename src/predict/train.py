@@ -72,8 +72,8 @@ def train(train_dataset, validation_dataset, epochs):
 
 def main():
     logger.info("Starting training")
-    train_datafile = '../../data/training/training.tfrecord'
-    validation_datafile = '../../data/test/test.tfrecord'
+    train_datafile = '../data/training/training.tfrecord'
+    validation_datafile = '../data/test/test.tfrecord'
     train_dataset = reader.decode(train_datafile)
     validation_dataset = reader.decode(validation_datafile)
     train(train_dataset, validation_dataset, 100)
